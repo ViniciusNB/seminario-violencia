@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+.ftext{animation:tracking-in-expand 1.5s cubic-bezier(.215,.61,.355,1.000) 1s both}
+
+.botoes{animation:scale-up-center 1s cubic-bezier(.39,.575,.565,1.000) both}
+@keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    width: 100%;
+}
+
+header{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+main {
+	width: 100%;
+}
+
+.tabela {
+	display: inline-flex;
+	width: 100%;
+}
+
+.tabela .ftext{
+	margin-top: 22vh;
+	margin-left: 22vh;
+}
+
+.tabela .botoes {
+	padding-left: 50vh;
+	padding-top: 12vh;
+}
+
+.w50{
+	width: 50%;
+}
+
+.line{
+    display: flex;
+    justify-items: center;
+}
+
+.column{
+    padding: 0;
+    float: left;
+}
+
+.menu {
+	border: none;
+	border-radius: 15px;
+    width: 200px;
+    background: none;
+	padding: 8px 0;
+	font-family: 'Roboto' sans-serif;
+	font-style: normal;
+	font-weight: 700;
+    font-size: 14px;
+    color: white;
+	margin: 5px;
+}
+.topics {
+	border: none;
+	border-radius: 31px;
+    width: 260px;
+    background: rgba(255, 255, 255, 0.01);
+	padding: 20px 0;
+	font-family: 'Roboto' sans-serif;
+	font-style: normal;
+	font-weight: 700;
+    font-size: 18px;
+    color: rgb(162, 0, 255);
+	text-decoration: none;
+	margin: 20px
+}
+.container {
+	width: 100%;
+}
+
+input:hover {
+    background: white;
+    color: #1c1c1c;
+    cursor: pointer;
+    transition: 1s all ease;
+}
+.topics:hover{
+    background: rgb(162, 0, 255);
+    color: white;
+    cursor: pointer;
+    transition: 1s all ease; 
+}
+
+ul {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 2vh;
+}
+li {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-inline: 3vh;
+}
+li a {
+    text-decoration: underline rgb(162, 0, 255) 2px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.conteudo {
+    background-color: #3f3f3f;
+    justify-content: center;
+    width: 75%;
+    border-radius: 10px;
+    padding-top: 5px;
+    color: white;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+	color: whitesmoke;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+/* Text Styles */
+.logo h1{
+	padding: 0px;
+	font-weight: 700;
+	font-family: Ubuntu Mono;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 120%;
+	color: #e4e4e4;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h4{
+	font-size: 27px;
+}
+
+h5{
+	font-size: 25px;
+}
+
+strong{
+	font-weight: bolder;
+}
+
+/* Header */
+.logo{
+	width: 20%;
+	padding: 15px;
+	padding-right: 0px;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 164%;
+	display: flex;
+	justify-content: flex-end;
+	font-family: Ubuntu mono;
+	text-align: center;
+}
+.logo h1 {
+	color: rgb(162, 0, 255);
+}
+
+nav{
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+#navDiv{
+	max-width: 500px;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 18%;
+}
+
+.menu:hover {
+    cursor: pointer;
+	background: whitesmoke;
+	transition: 1s;
+	color: rgb(162, 0, 255);
+}
+.active{
+	background: white;
+	color: #1c1c1c;
+}
+
+/* Footer */
+footer{
+	font-size: 17px;
+	background-color: #161616;
+	width: 100%;
+	position: absolute;
+}
+
+footer ul{
+	width: 100%;
+	max-width: 1000px;
+	height: 55px;
+	margin: auto;
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+footer ul li{
+	display: inline-block;
+
+	font-family: Roboto Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 100%;
+	text-decoration: none;
+}
+
+
+a {
+	text-decoration: none;
+}
