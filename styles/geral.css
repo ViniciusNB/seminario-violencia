@@ -4,7 +4,6 @@
 main{animation:scale-up-center 1.5s cubic-bezier(.39,.575,.565,1.000) both}
 @keyframes scale-up-center{0%{transform:scale(.5)}100%{transform:scale(1)}}
 
-
 body {
     margin: 0;
     padding: 0;
@@ -69,6 +68,7 @@ main li, main li li{
 	padding-top: 12vh;
 }
 
+
 .w50{
 	width: 50%;
 }
@@ -84,6 +84,7 @@ main li, main li li{
 }
 
 .menu {
+	transition: all ease 0.7s;
 	border: none;
 	border-radius: 15px;
     width: 200px;
@@ -125,6 +126,30 @@ input:hover {
     color: white;
     cursor: pointer;
     transition: 1s all ease; 
+}
+
+.topics-doc {
+	transition: all ease 1s;
+	border: none;
+	border-radius: 31px;
+    width: 260px;
+    background: rgb(162, 0, 255);
+	padding: 20px 0;
+	font-family: 'Roboto' sans-serif;
+	font-style: normal;
+	font-weight: 700;
+    font-size: 18px;
+    color: white;
+	text-decoration: none;
+	margin: 20px;
+	align-items: center;
+}
+
+.topics-doc:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(162, 0, 255);
+    cursor: pointer;
+    transition: all ease 1s; 
 }
 
 ul {
@@ -248,7 +273,7 @@ nav{
 .menu:hover {
     cursor: pointer;
 	background: whitesmoke;
-	transition: 1s;
+	transition: all ease 1s;
 	color: rgb(162, 0, 255);
 }
 .active{
@@ -314,3 +339,9 @@ a {
 		align-items: center;
 	}
 }
+
+hr {
+	border: 0;
+  	height: 2px;
+  	background-image: linear-gradient(to right, transparent, rgb(162, 0, 255), transparent);  
+  }
